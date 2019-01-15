@@ -258,7 +258,7 @@ let signUpFunction = (req, res) => {
                                     html: `<b> Dear ${newUserObj.firstName}</b><br> Hope you are doing well. 
                                     <br>Welcome to our Meeting Planner App <br>
                                     Please click on following link to verify your account with Lets Meet.<br>
-                                    <br> <a href="${applicationUrl}/verify-email/${newUserObj.userId}">Click Here</a>                                     
+                                    <br> <a href="http://api.coolcoder.xyz/api/v1/users/verify-email/${newUserObj.userId}">Click Here</a>                                     
                                     `
                                 }
 
