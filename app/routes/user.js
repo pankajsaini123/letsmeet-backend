@@ -131,7 +131,7 @@ module.exports.setRouter = (app) => {
 
 
     // params: userId.
-    app.get(`${baseUrl}/verify-email`, userController.verifyEmailFunction);
+    app.get(`${baseUrl}/verify-email/:userId`, userController.verifyEmailFunction);
 
     // params: userId.
     app.post(`${baseUrl}/:userId/delete`, auth.isAuthorized, userController.deleteUser);

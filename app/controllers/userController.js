@@ -123,10 +123,10 @@ let verifyEmailFunction = (req, res) => {
     let findUser = () => {
         //console.log("findUser");
         return new Promise((resolve, reject) => {
-            if (req.body.userId) {
+            if (req.params.userId) {
                 console.log("req body userId is there");
                 //console.log(req.body);
-                UserModel.findOne({ userId: req.body.userId })
+                UserModel.findOne({ userId: req.params.userId })
                 .select('-password -__v -_id')
                 .lean()
                 .exec((err, result) => {
