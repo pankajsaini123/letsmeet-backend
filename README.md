@@ -1,4 +1,4 @@
-# TODO LIST - LIVE MANAGEMENT SYSTEM
+# LET'S MEET - MEETING SCHEDULER
 
 Angular platform is used to build scalable application. It uses socket.io to make the web app realtime. Angular is highly robust, meanwhile allows to create app for multiple platform like mobile, desktop and web.
 
